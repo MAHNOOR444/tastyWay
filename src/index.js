@@ -1,20 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-
-
-const myFirstElement=
-<div>
-<h1>Hello World</h1>
-<p>This is Ayesha Asad</p>
-</div>
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Layout from './pages/Layout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  myFirstElement
-  //<React.StrictMode>
-   // <App />
-  //</React.StrictMode>
+  <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<Layout />}>
+       <Route index element={<Home />} />
+       <Route path='login' element={<Login />} />
+       <Route path='signup' element={<Signup />} />
+       </Route>
+     </Routes>
+  
+  </BrowserRouter>
 );
 
 
