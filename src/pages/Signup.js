@@ -52,16 +52,15 @@ const Signup = () => {
       />
 
       {/* Signup Form */}
-<div
-  className="bg-white p-5 rounded shadow mt-8"
-  style={{ 
-    width: "100%", 
-    maxWidth: "450px", 
-    zIndex: 1, 
-    marginTop: "100px"  // 👈 Push it below the navbar
-  }}
-  data-aos="zoom-in"
->
+        <div className="bg-white p-5 rounded shadow  mt-8"
+         style={{ 
+         width: "100%", 
+         maxWidth: "450px", 
+         zIndex: 1, 
+         marginTop: "100px" 
+         }}
+         data-aos="zoom-in"
+        >
         <form>
           <div className="mb-3">
             <label htmlFor="name" className="form-label fw-semibold">Full Name</label>
