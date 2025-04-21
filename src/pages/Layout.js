@@ -25,7 +25,7 @@ const Layout = () => {
           {/* Center Navigation */}
           <div className="collapse navbar-collapse justify-content-center">
             <ul className="navbar-nav w-100 d-flex justify-content-center">
-              {["Home", "Customers", "Riders", "Food Providers", "About"].map((item, index) => (
+              {["Home", "Customers", "Riders", "Restaurant Owner", "About Us"].map((item, index) => (
                 <li className="nav-item" key={index}>
                   <Link
                     className="nav-link text-dark fw-semibold nav-full"
